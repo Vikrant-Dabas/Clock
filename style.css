@@ -48,7 +48,16 @@ body {
     width: 2.5px;
     background-color: #ff0a43;
     transition: none;
-    z-index: 1;
+    z-index: -1;
+}
+.centre{
+    height: .5rem;
+    width: .5rem;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 6.25rem;
+    left: 6.3rem;
 }
 .hour{
     height: 5rem;

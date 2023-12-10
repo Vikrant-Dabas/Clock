@@ -7,6 +7,7 @@ let month = document.querySelector('.month');
 let date = document.querySelector('.date');
 let currTime = document.querySelector('.currtime');
 let body = document.querySelector('body');
+let centre = document.querySelector('.centre');
 let darkTheme = false;
 const months = [
     "January", "February", "March", "April", "May", "June",
@@ -21,6 +22,7 @@ changeTheme.addEventListener('click', (e) => {
         minute.classList.add('opp-dark-mode');
         date.classList.add('opp-dark-mode')
         body.classList.add('dark-mode');
+        centre.classList.add('opp-dark-mode');
         e.target.innerHTML = 'Light Mode';
     }
     else {
@@ -29,6 +31,7 @@ changeTheme.addEventListener('click', (e) => {
         minute.classList.remove('opp-dark-mode');
         date.classList.remove('opp-dark-mode')
         body.classList.remove('dark-mode');
+        centre.classList.remove('opp-dark-mode');
         e.target.innerHTML = 'Dark Mode';
     }
     darkTheme = !darkTheme
