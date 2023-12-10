@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s ease;
+}
+
+body {
+    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-theme {
+    height: 2rem;
+    width: 7rem;
+    border: none;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+}
+
+.clock {
+    height: 13rem;
+    width: 13rem;
+    margin: 1rem;
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    bottom: 6.5rem;
+    left: 6.5rem;
+    transform-origin: 50% 100%;
+    transition: .3s ease;
+}
+.second{
+    height: 6.5rem;
+    width: 2.5px;
+    background-color: #ff0a43;
+    transition: none;
+    z-index: 1;
+}
+.hour{
+    height: 5rem;
+    background-color: black;
+    width: 2.5px;
+}
+.minute{
+    height: 6rem;
+    background-color: black;
+    width: 2.5px;
+}
+.time{
+    flex-direction: column;
+}
+.currtime{
+    text-align: center;
+    font-size: 4rem;
+}
+.currdate{
+    gap: .5rem;
+    height: 4rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.date{
+    height: 2rem;
+    width: 2rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.opp-dark-mode {
+    background-color: white;
+    color: black;
+}
