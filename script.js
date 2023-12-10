@@ -21,6 +21,7 @@ changeTheme.addEventListener('click', (e) => {
         minute.classList.add('opp-dark-mode');
         date.classList.add('opp-dark-mode')
         body.classList.add('dark-mode');
+        e.target.innerHTML = 'Light Mode';
     }
     else {
         changeTheme.classList.remove('opp-dark-mode');
@@ -28,6 +29,7 @@ changeTheme.addEventListener('click', (e) => {
         minute.classList.remove('opp-dark-mode');
         date.classList.remove('opp-dark-mode')
         body.classList.remove('dark-mode');
+        e.target.innerHTML = 'Dark Mode';
     }
     darkTheme = !darkTheme
 })
