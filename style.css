@@ -49,7 +49,6 @@ body {
     background-color: #ff0a43;
     transition: none;
     z-index: -1;
-    transition: 1s ease;
 }
 .centre{
     height: .5rem;
